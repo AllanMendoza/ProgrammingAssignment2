@@ -1,3 +1,5 @@
+## Caches inverse o a matrix to use in solving
+
  makeCacheMatrix <- function(Mi_Matriz = matrix()) {
    cachedInversa <- NULL
    set <- function(y) {
@@ -13,12 +15,12 @@
  }
   
   
- ## Write a short comment describing this function
- ## Return the inverse of an cacheMatrix object
+ ## Use inverse cached if exists or get the inver of a matriz
+ ## Return the inverse of matriz
   
  cacheSolve <- function(Mi_Matriz, ...) {
-   ## Return a matrix that is the inverse of 'x'
-   ## Return a matrix that is the inverse of 'x'
+   ## Return a matrix that is the inverse of 'Mi_Matriz'
+   ## Return a matrix that is the inverse of 'Mi_Matriz'
    invFunc <- Mi_Matriz$getInversa()
    if(!is.null(invFunc)) {
      message("getting cached data")
